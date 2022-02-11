@@ -1,0 +1,11 @@
+<ng-container [formGroup]="gainForm">
+    <input placeholder="Amount Gained" formControlName="amountGained" type="number" />
+    <!-- <input placeholder="Description" formControlName="description" /> -->
+    <button (click)="addGain()">Add gain</button>
+</ng-container>
+
+<ng-container [formGroup]="lossForm">
+    <!-- <input placeholder="Description" formControlName="description" /> -->
+    <input placeholder="Amount Lost" formControlName="amountLost" type="number" />
+    <button (click)="addLoss()">Add Loss</button>
+</ng-container>
